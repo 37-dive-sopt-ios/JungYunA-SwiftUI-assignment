@@ -21,8 +21,8 @@ struct HomeView: View {
                     TopBar()
                     
                     Section {
-                        VStack {
-                            Color.clear.frame(height: 1000)
+                        VStack(spacing: 16) {
+                            BmartSection()
                         }
                     } header: {
                         SearchHeader(query: $query)
