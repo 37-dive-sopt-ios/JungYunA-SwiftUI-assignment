@@ -9,10 +9,10 @@ import SwiftUI
 
 struct TopBar: View {
     var body: some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 3) {
             HStack(spacing: 4) {
                 Text("우리집")
-                    .font(.title3.bold())
+                    .font(.bold16)
                 Image("down")
                     .font(.footnote.weight(.semibold))
             }

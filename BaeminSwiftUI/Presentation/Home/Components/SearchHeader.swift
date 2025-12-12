@@ -15,6 +15,7 @@ struct SearchHeader: View {
             
             HStack(spacing: 10) {
                 TextField("찾아라! 맛있는 음식과 맛집", text: $query)
+                    .font(.regular14)
                     .textFieldStyle(.plain)
                     .textInputAutocapitalization(.never)
                 
