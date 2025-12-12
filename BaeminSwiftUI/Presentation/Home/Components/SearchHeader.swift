@@ -18,7 +18,7 @@ struct SearchHeader: View {
                     .textFieldStyle(.plain)
                     .textInputAutocapitalization(.never)
                 
-                Image(systemName: "search")
+                Image("search")
                     .foregroundStyle(.secondary)
             }
             .padding(.horizontal, 16)
