@@ -13,13 +13,13 @@ struct HomeView: View {
     var body: some View {
         VStack(spacing: 0) {
             
-            TopBar()
-            
             ScrollView {
                 LazyVStack(
                     spacing: 0,
                     pinnedViews: [.sectionHeaders]
                 ){
+                    TopBar()
+                    
                     Section {
                         VStack {
                             Color.clear.frame(height: 1000)
