@@ -26,7 +26,7 @@ struct MartSection: View {
                 }
             }
         }
-        .padding(.horizontal, 16)
+        .padding(.leading, 16)
         .padding(.vertical, 10)
         .background(.white)
     }

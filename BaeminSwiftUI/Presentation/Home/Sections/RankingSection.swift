@@ -10,11 +10,17 @@ import SwiftUI
 struct RankingSection: View {
     
     private let items: [RankingItem] = [
-            .init(store: "백억보쌈제육…", rating: 5.0, reviews: 1973,
+            .init(store: "백억보쌈제육식당", rating: 5.0, reviews: 1973,
                   title: "[든든한 한끼] 보쌈 막국수", discountPercent: 25,
                   salePrice: 12000, originalPrice: 16000, badge: "최소주문금액 없음"),
-            .init(store: "백억보쌈제육…", rating: 5.0, reviews: 1973,
+            .init(store: "백억보쌈제육식당", rating: 5.0, reviews: 1973,
                   title: "(1인) 피자 + 사이드 Set", discountPercent: 20,
+                  salePrice: 12000, originalPrice: 16000, badge: "최소주문금액 없음"),
+            .init(store: "마라탕탕후루후루", rating: 5.0, reviews: 1973,
+                  title: "[든든한 한끼] 보쌈 막국수", discountPercent: 25,
+                  salePrice: 12000, originalPrice: 16000, badge: "최소주문금액 없음"),
+            .init(store: "마라탕탕후루후루", rating: 5.0, reviews: 1973,
+                  title: "[든든한 한끼] 보쌈 막국수", discountPercent: 25,
                   salePrice: 12000, originalPrice: 16000, badge: "최소주문금액 없음"),
             .init(store: "마라탕탕후루후루", rating: 5.0, reviews: 1973,
                   title: "[든든한 한끼] 보쌈 막국수", discountPercent: 25,
@@ -30,7 +36,7 @@ struct RankingSection: View {
                 
                 HStack{
                     HStack(spacing: 6) {
-                        Text("우리동네 한그릇 인기 랭킹")
+                        Text("우리 동네 한그릇 인기 랭킹")
                             .font(.semiBold18)
                             .foregroundStyle(.white)
                         Image("info_white")

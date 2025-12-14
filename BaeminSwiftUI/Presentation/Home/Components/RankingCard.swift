@@ -20,7 +20,7 @@ struct RankingCard: View {
                     EmptyView()
                 )
             
-            HStack(spacing: 6) {
+            HStack(spacing: 4) {
                 Text(item.store)
                     .font(.regular12)
                     .foregroundStyle(.secondary)
@@ -43,7 +43,7 @@ struct RankingCard: View {
                 .foregroundStyle(.primary)
                 .lineLimit(2)
             
-            HStack(spacing: 10) {
+            HStack(spacing: 6) {
                 Text("\(item.discountPercent)%")
                     .font(.bold14)
                     .foregroundStyle(.red)

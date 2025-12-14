@@ -9,18 +9,24 @@ import SwiftUI
 
 struct CategorySection: View {
     private let items = ["한그릇","치킨","카페·디저트","피자","분식","고기","찜·탕","야식","패스트푸드","픽업"]
+    private let tabs = ["음식배달", "픽업", "장보기·쇼핑", "선물하기", "혜택모아보기"]
+    @State private var selectedTab: String = "음식배달"
     
     var body: some View {
         VStack {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
-                    TabItem(title: "음식배달", selected: true)
-                    TabItem(title: "픽업", selected: false)
-                    TabItem(title: "장보기·쇼핑", selected: false)
-                    TabItem(title: "선물하기", selected: false)
-                    TabItem(title: "혜택모아보기", selected: false)
+                    ForEach(tabs, id: \.self) { title in
+                        TabItem(
+                            title: title,
+                            selected: selectedTab == title
+                        ) {
+                            selectedTab = title
+                        }
+                    }
                 }
-                .padding(.init(top: 1, leading: 16, bottom: 0, trailing: 16))
+                .padding(.horizontal, 16)
+                .padding(.top, 1)
             }
             
             Divider()
@@ -37,7 +43,7 @@ struct CategorySection: View {
                         Text(title)
                             .font(.regular14)
                             .frame(width: 68)
-                            
+                        
                     }
                 }
             }

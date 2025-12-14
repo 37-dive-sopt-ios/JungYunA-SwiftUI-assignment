@@ -11,31 +11,29 @@ struct HomeView: View {
     @State private var query: String = ""
     
     var body: some View {
-        VStack(spacing: 0) {
+        ScrollView (.vertical, showsIndicators: false) {
             
-            ScrollView {
-                LazyVStack(
-                    spacing: 0,
-                    pinnedViews: [.sectionHeaders]
-                ){
-                    TopBar()
-                    
-                    Section {
-                        VStack(spacing: 16) {
-                            BmartSection()
-                            CategorySection()
-                            MartSection()
-                            AdSection()
-                            RankingSection()
-                        }
-                    } header: {
-                        SearchHeader(query: $query)
-                            .background(.white)
+            LazyVStack(
+                spacing: 0,
+                pinnedViews: [.sectionHeaders]
+            ){
+                TopBar()
+                
+                Section {
+                    VStack(spacing: 16) {
+                        BmartSection()
+                        CategorySection()
+                        MartSection()
+                        AdSection()
+                        RankingSection()
                     }
+                } header: {
+                    SearchHeader(query: $query)
+                        .background(.white)
                 }
             }
-            .background(Color.gray)
         }
+        .background(Color.gray)
     }
     
 }
