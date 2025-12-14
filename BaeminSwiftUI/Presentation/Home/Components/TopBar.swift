@@ -9,24 +9,21 @@ import SwiftUI
 
 struct TopBar: View {
     var body: some View {
-        HStack(spacing: 3) {
-            HStack(spacing: 4) {
+        HStack(spacing: 12) {
+            HStack(spacing: 3) {
                 Text("우리집")
                     .font(.bold16)
                 Image("down")
-                    .font(.footnote.weight(.semibold))
             }
 
             Spacer()
 
             Image("ad")
-                .foregroundStyle(.purple)
             Image("alarm")
             Image("cart")
         }
-        .font(.title3)
         .padding(.horizontal, 16)
-        .padding(.vertical, 10)
+        .padding(.vertical, 9)
         .background(.white)
     }
 }
