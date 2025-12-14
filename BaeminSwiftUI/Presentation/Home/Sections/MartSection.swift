@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct MartSection: View {
-    private let marts = ["B마트","CU","이마트슈퍼","홈플러스","GS25","세븐일레븐"]
+    private let marts = ["B마트","CU","이마트슈퍼","홈플러스","GS25","세븐일레븐","로손","롯데마트"]
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 9) {
+            LazyHStack(spacing: 9) {
                 ForEach(marts, id: \.self) { name in
                     VStack(spacing: 6) {
                         RoundedRectangle(cornerRadius: 20)

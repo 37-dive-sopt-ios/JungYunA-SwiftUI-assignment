@@ -64,7 +64,6 @@ struct RankingSection: View {
                     .padding(.top, 60)
                     .padding(.bottom, 20)
                 }
-                .scrollClipDisabled()
             }
             .frame(height: 390)
                 

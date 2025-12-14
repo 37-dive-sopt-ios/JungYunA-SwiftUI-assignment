@@ -16,12 +16,13 @@ struct CategorySection: View {
         VStack {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
-                    ForEach(tabs, id: \.self) { title in
+                    ForEach(tabs, id: \.self) { //tabs 배열에서 하나씩 꺼내와서 title에 넣음, id는 각 값이 unique이므로 셀프로 id가 됨
+                        title in
                         TabItem(
                             title: title,
-                            selected: selectedTab == title
+                            selected: selectedTab == title //현재 선택된 탭이 현재 그리고 있는 탭의 이름과 같으면 true
                         ) {
-                            selectedTab = title
+                            selectedTab = title  //TabItem에 onTap으로 들어감
                         }
                     }
                 }
@@ -56,8 +57,8 @@ struct CategorySection: View {
                     Text("\(selectedTab)")
                         .font(.bold14)
                     Text("에서 더보기 >")
+                        .font(.regular14)
                 }
-                .font(.regular14)
                 .foregroundStyle(.baeminBlack)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 10)

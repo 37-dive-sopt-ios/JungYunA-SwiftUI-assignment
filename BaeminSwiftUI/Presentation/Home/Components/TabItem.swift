@@ -10,14 +10,14 @@ import SwiftUI
 struct TabItem: View {
     let title: String
     let selected: Bool
-    let onTap: () -> Void
+    let onTap: () -> Void // 이 탭이 눌렸을 때 실행할 동작을 외부에서 주입 받음
     
     var body: some View {
         Button(action: onTap) {
             VStack(spacing: 10) {
                 Text(title)
                     .font(.semiBold18)
-                    .foregroundColor(selected ? .primary: .secondary)
+                    .foregroundColor(selected ? .primary: .secondary) //선택되면 강조, 아니면 덜 중요함
                 
                 Rectangle()
                     .fill(selected ? Color.black : Color.clear)

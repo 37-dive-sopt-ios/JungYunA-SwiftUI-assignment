@@ -28,6 +28,6 @@ struct BmartSection: View {
             .padding(.top, 24)
             .padding(.bottom, 27)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: .infinity)  //부모 뷰가 허락한 만큼 가로로 최대한 늘이기
     }
 }

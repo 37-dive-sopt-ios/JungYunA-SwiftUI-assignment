@@ -17,7 +17,7 @@ struct RankingCard: View {
                 .fill(Color.gray)
                 .frame(width: 145, height: 145)
                 .overlay(
-                    EmptyView()
+                    EmptyView() // 나중에 이미지 올릴 때 사용
                 )
             
             HStack(spacing: 4) {
@@ -32,7 +32,7 @@ struct RankingCard: View {
                     .font(.regular12)
                     .foregroundStyle(.secondary)
                 
-                Text("(\(item.reviews.formatted())")
+                Text("(\(item.reviews.formatted())") //formatted -> 천 단위에 ,
                     .font(.regular12)
                     .foregroundStyle(.secondary)
             }
