@@ -25,6 +25,7 @@ struct HomeView: View {
                             BmartSection()
                             CategorySection()
                             MartSection()
+                            AdSection()
                         }
                     } header: {
                         SearchHeader(query: $query)
