@@ -26,6 +26,7 @@ struct HomeView: View {
                             CategorySection()
                             MartSection()
                             AdSection()
+                            RankingSection()
                         }
                     } header: {
                         SearchHeader(query: $query)
