@@ -23,6 +23,7 @@ struct HomeView: View {
                     Section {
                         VStack(spacing: 16) {
                             BmartSection()
+                            CategorySection()
                         }
                     } header: {
                         SearchHeader(query: $query)
