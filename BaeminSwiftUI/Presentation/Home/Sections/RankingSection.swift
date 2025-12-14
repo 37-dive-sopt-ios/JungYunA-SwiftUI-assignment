@@ -30,7 +30,7 @@ struct RankingSection: View {
     var body: some View {
             
             ZStack(alignment: .topLeading) {
-                LinearGradient(colors: [Color(red: 0.46, green: 0.50, blue: 1.0),
+                LinearGradient(colors: [Color(red: 114/255, green: 118/255, blue: 1.0),
                                         Color(red: 1, green: 1, blue: 1)], startPoint: .top, endPoint: .bottom)
                 .frame(height: 200)
                 
