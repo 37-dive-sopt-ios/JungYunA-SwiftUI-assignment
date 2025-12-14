@@ -52,11 +52,13 @@ struct CategorySection: View {
             Divider()
             
             Button(action: {}) {
-                HStack(spacing: 6) {
-                    Text("음식배달에서 더보기 >")
+                HStack(spacing: 0) {
+                    Text("\(selectedTab)")
+                        .font(.bold14)
+                    Text("에서 더보기 >")
                 }
                 .font(.regular14)
-                .foregroundStyle(Color.baeminBlack)
+                .foregroundStyle(.baeminBlack)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 10)
             }
