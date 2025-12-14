@@ -24,6 +24,7 @@ struct HomeView: View {
                         VStack(spacing: 16) {
                             BmartSection()
                             CategorySection()
+                            MartSection()
                         }
                     } header: {
                         SearchHeader(query: $query)
@@ -31,7 +32,7 @@ struct HomeView: View {
                     }
                 }
             }
-            .background(Color(.systemBackground))
+            .background(Color.gray)
         }
     }
     

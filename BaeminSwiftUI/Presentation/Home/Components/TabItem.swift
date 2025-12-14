@@ -22,5 +22,6 @@ struct TabItem: View {
                 .frame(height: 3)
             
         }
+        .padding(.init(top: 15, leading: 0, bottom: 0, trailing: 0))
     }
 }

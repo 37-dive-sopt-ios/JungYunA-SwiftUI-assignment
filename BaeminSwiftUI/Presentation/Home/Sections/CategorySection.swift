@@ -32,9 +32,11 @@ struct CategorySection: View {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(Color.gray)
                             .frame(height: 58)
+                            .frame(width: 58)
+                        
                         Text(title)
                             .font(.regular14)
-                            .frame(width: 80)
+                            .frame(width: 68)
                             
                     }
                 }
@@ -54,7 +56,5 @@ struct CategorySection: View {
             }
         }
         .background(.white)
-        .clipShape(RoundedRectangle(cornerRadius: 16))
-        .padding(.horizontal, 16)
     }
 }
