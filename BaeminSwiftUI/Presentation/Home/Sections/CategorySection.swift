@@ -56,7 +56,7 @@ struct CategorySection: View {
                     Text("음식배달에서 더보기 >")
                 }
                 .font(.regular14)
-                .foregroundStyle(.primary)
+                .foregroundStyle(Color.baeminBlack)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 10)
             }

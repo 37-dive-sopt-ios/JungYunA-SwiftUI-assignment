@@ -25,8 +25,8 @@ struct SearchHeader: View {
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
             .background(
-                RoundedRectangle(cornerRadius: 24)
-                    .stroke(Color(.systemGray4), lineWidth: 1)
+                RoundedRectangle(cornerRadius: 50)
+                    .stroke(Color(.black), lineWidth: 1)
                     .background(
                         RoundedRectangle(cornerRadius: 24)
                             .fill(.white)

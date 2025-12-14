@@ -21,8 +21,10 @@ struct HomeView: View {
                 
                 Section {
                     VStack(spacing: 16) {
-                        BmartSection()
-                        CategorySection()
+                        VStack(spacing: 0) {
+                                BmartSection()
+                                CategorySection()
+                            }
                         MartSection()
                         AdSection()
                         RankingSection()
@@ -33,7 +35,7 @@ struct HomeView: View {
                 }
             }
         }
-        .background(Color.gray)
+        .background(Color.baeminBackgroundWhite)
     }
     
 }
